@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mummopuisto 360</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.7/build/pannellum.css">
+  <link rel="stylesheet" href="https://vjs.zencdn.net/7.1.0/video-js.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Mummopuisto 360</h1>
+    <p>Katsele ympärillesi vetämällä kuvaa tai videota hiirellä tai sormella.</p>
+
+    <section aria-labelledby="image-title">
+      <h2 id="image-title">360°-kuva</h2>
+      <div id="image-viewer" aria-label="Mummopuiston 360 asteen kuva"></div>
+    </section>
+
+    <section aria-labelledby="video-title">
+      <h2 id="video-title">360°-video</h2>
+      <p>Käynnistä video toistopainikkeella. Videon latautuminen voi kestää.</p>
+      <video id="video-viewer" class="video-js vjs-default-skin vjs-big-play-centered"
+        controls preload="none" playsinline aria-label="Mummopuiston 360 asteen video">
+        <source src="mummopuisto.mp4" type="video/mp4">
+        Selaimesi ei tue videon toistamista.
+      </video>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.7/build/pannellum.js"></script>
+  <script src="https://vjs.zencdn.net/7.1.0/video.js"></script>
+  <script src="https://pannellum.org/js/videojs-pannellum-plugin.js"></script>
+  <script src="viewer.js"></script>
+</body>
+</html>

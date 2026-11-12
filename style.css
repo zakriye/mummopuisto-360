@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f3f6f2;
+  color: #17241d;
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+section {
+  margin: 2rem 0;
+}
+
+#image-viewer,
+#video-viewer {
+  width: 100%;
+  height: min(60vh, 550px);
+  min-height: 280px;
+  background: #151c19;
+}
