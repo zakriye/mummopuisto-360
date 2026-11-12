@@ -3,6 +3,8 @@
 360 asteen kuva- ja videokatselin. Kuvan katseluun käytetään Pannellumia ja
 videon katseluun Video.js:ää sekä Pannellumin Video.js-liitännäistä.
 
+Verkkosivu: <https://zakriye.github.io/mummopuisto-360/>
+
 ## Käyttö omalla koneella
 
 Asenna ensin [Git LFS](https://git-lfs.com/) sekä Python 3 ja suorita:
@@ -25,6 +27,6 @@ sen toistopainikkeesta. Video on suuri, joten latautuminen voi kestää.
 Kirjastot ladataan CDN-palveluista, joten katselu vaatii verkkoyhteyden.
 Git LFS käyttää GitHubin tallennustilaa ja tiedonsiirtokiintiötä.
 
-GitHub Pages ei tarjoile Git LFS -objekteja mediatiedostoina. Paikallinen
-palvelin toimii, kun video on ensin ladattu Git LFS:llä yllä olevien ohjeiden
-mukaisesti.
+GitHub Pages ei tarjoile Git LFS -objekteja mediatiedostoina, joten verkkosivu
+lataa videon erikseen GitHubin mediaosoitteesta. Paikallinen palvelin käyttää
+Git LFS:llä yllä olevien ohjeiden mukaisesti ladattua videotiedostoa.
